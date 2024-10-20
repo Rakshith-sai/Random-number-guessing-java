@@ -1,9 +1,9 @@
 import java.util.*;
 class Game{
-  public static void main(String[] args){
+  public static void start(){
     Scanner sr = new Scanner(System.in);
     Random rd = new Random();
-    int n = rd.nextInt();
+    int n = rd.nextInt(100);
     for(int i=0;i<5;i++){
       System.out.println("Enter the number\nChoice "+(i+1)+" :");
       int in = sr.nextInt();
@@ -20,5 +20,6 @@ class Game{
 class RandomNumber{
   public static void main(String[] args){
     Game game = new Game();
+    game.start();
   }
 }
